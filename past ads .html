@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Your Advertising Journey</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            width: 100%;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #4a6cf7 0%, #6c8eff 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .main-content {
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .platform-selection {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 30px;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+
+        .platform-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 2px solid transparent;
+        }
+
+        .platform-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .adstaara-card {
+            border-color: #4a6cf7;
+        }
+
+        .google-card {
+            border-color: #34a853;
+        }
+
+        .platform-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 2.5rem;
+        }
+
+        .adstaara-icon {
+            background: #e8eeff;
+            color: #4a6cf7;
+        }
+
+        .google-icon {
+            background: #e6f4ea;
+            color: #34a853;
+        }
+
+        .platform-card h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .platform-card p {
+            color: #666;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            width: 100%;
+            text-align: center;
+        }
+
+        .btn-adstaara {
+            background: #4a6cf7;
+            color: white;
+        }
+
+        .btn-adstaara:hover {
+            background: #3a5bd9;
+            box-shadow: 0 5px 15px rgba(74, 108, 247, 0.4);
+        }
+
+        .btn-google {
+            background: #34a853;
+            color: white;
+        }
+
+        .btn-google:hover {
+            background: #2d9449;
+            box-shadow: 0 5px 15px rgba(52, 168, 83, 0.4);
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 60px;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+
+        .feature {
+            flex: 1;
+            min-width: 250px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .feature i {
+            font-size: 2.5rem;
+            color: #4a6cf7;
+            margin-bottom: 15px;
+        }
+
+        .feature h3 {
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+
+        .feature p {
+            color: #666;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #666;
+            border-top: 1px solid #eee;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .platform-selection {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .platform-card {
+                width: 100%;
+                max-width: 350px;
+            }
+            
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            .main-content {
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Start Your Advertising Journey</h1>
+            <p>Choose your advertising platform and launch your campaign in minutes</p>
+        </header>
+        
+        <div class="main-content">
+            <div class="platform-selection">
+                <div class="platform-card adstaara-card">
+                    <div class="platform-icon adstaara-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h2>Adstaara Ads</h2>
+                    <p>Launch targeted campaigns with our AI-powered platform designed for maximum ROI and audience engagement.</p>
+                    <a href="#" class="btn btn-adstaara">Start Adstaara Ads</a>
+                </div>
+                
+                <div class="platform-card google-card">
+                    <div class="platform-icon google-icon">
+                        <i class="fab fa-google"></i>
+                    </div>
+                    <h2>Google Ads</h2>
+                    <p>Reach customers across Google's network with the world's most popular online advertising platform.</p>
+                    <a href="#" class="btn btn-google">Start Google Ads</a>
+                </div>
+            </div>
+            
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-bullseye"></i>
+                    <h3>Precise Targeting</h3>
+                    <p>Reach your ideal audience with advanced targeting options</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Performance Analytics</h3>
+                    <p>Track and optimize your campaigns with real-time data</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-clock"></i>
+                    <h3>Quick Setup</h3>
+                    <p>Launch your first campaign in just a few minutes</p>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>© 2023 Ad Platform Selector. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
